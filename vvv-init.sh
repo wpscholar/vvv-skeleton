@@ -4,15 +4,11 @@ echo 'Setting up wp.dev website'
 
 npm install replace -g
 
-cd public_html
-
 composer install
 composer run generate-salts
 
-wp db drop --yes --path=wp
-wp db create --path=wp
-
-cd ..
+wp db drop --yes --path=public_html/wp
+wp db create --path=public_html/wp
 
 # Import database from /sql/import.sql
 #wp db import sql/import.sql --path=public_html/wp

@@ -23,12 +23,15 @@
     "composer/installers": "*@stable"
   },
   "extra": {
-    "wordpress-install-dir": "wp",
+    "wordpress-install-dir": "public_html/wp",
     "installer-paths": {
       "public_html/content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
       "public_html/content/plugins/{$name}": ["type:wordpress-plugin"],
       "public_html/content/themes/{$name}": ["type:wordpress-theme"]
     }
+  },
+  "config": {
+    "vendor-dir": "public_html/vendor"
   },
   "scripts": {
     "generate-salts": [
