@@ -45,7 +45,7 @@ if ( ! defined( 'DB_COLLATE' ) ) {
 }
 
 if ( ! defined( 'WP_DEBUG' ) ) {
-	define( 'WP_DEBUG', false );
+	define( 'WP_DEBUG', true );
 }
 
 if ( ! defined( 'DISALLOW_FILE_EDIT' ) ) {
