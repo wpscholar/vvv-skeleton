@@ -1,0 +1,35 @@
+# Mac
+.DS_Store
+
+# PHPStorm
+.idea
+
+# Node
+node_modules/*
+
+# Composer
+/public_html/vendor/
+
+# WordPress
+/public_html/wp/
+/public_html/salt.php
+
+# WordPress: Config File
+wp-config-*.php
+
+# WordPress: Must-Use Plugins
+/public_html/content/mu-plugins/*
+!/public_html/content/mu-plugins/index.php
+!/public_html/content/mu-plugins/register-theme-directory.php
+
+# WordPress: Plugins
+/public_html/content/plugins/*
+!/public_html/content/plugins/index.php
+
+# WordPress: Themes
+/public_html/content/themes/*
+!/public_html/content/themes/index.php
+
+# WordPress: Uploads
+/public_html/content/uploads/*
+!/public_html/content/uploads/index.php

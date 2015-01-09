@@ -1,0 +1,39 @@
+{
+  "name": "wpscholar/vvv-skeleton",
+  "description": "Setup a new WordPress project using Composer and VVV",
+  "license": "GPL-2.0+",
+  "type": "project",
+  "keywords": ["WordPress", "skeleton", "CMS", "blog", "composer", "wpackagist", "vvv"],
+  "authors": [
+    {
+      "name": "Micah Wood",
+      "email": "micah@wpscholar.com",
+      "homepage": "http://wpscholar.com",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "johnpbloch/wordpress": "*@stable",
+    "composer/installers": "*@stable"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+      "content/plugins/{$name}": ["type:wordpress-plugin"],
+      "content/themes/{$name}": ["type:wordpress-theme"]
+    }
+  },
+  "scripts": {
+    "generate-salts": [
+      "echo 'Creating salt.php file...'",
+      "echo '<?php' > salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> salt.php"
+    ]
+  }
+}
