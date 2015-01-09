@@ -11,7 +11,7 @@ if ( file_exists( __DIR__ . '/wp-config-local.php' ) ) {
 }
 
 if ( ! defined( 'APP_DOMAIN' ) ) {
-	define( 'APP_DOMAIN', $_SERVER['HTTP_HOST'] );
+	define( 'APP_DOMAIN', 'wp.dev' );
 }
 
 define( 'WP_HOME', 'http://' . APP_DOMAIN );
