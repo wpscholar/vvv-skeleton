@@ -25,15 +25,15 @@
   "extra": {
     "wordpress-install-dir": "wp",
     "installer-paths": {
-      "content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
-      "content/plugins/{$name}": ["type:wordpress-plugin"],
-      "content/themes/{$name}": ["type:wordpress-theme"]
+      "public_html/content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+      "public_html/content/plugins/{$name}": ["type:wordpress-plugin"],
+      "public_html/content/themes/{$name}": ["type:wordpress-theme"]
     }
   },
   "scripts": {
     "generate-salts": [
       "echo 'Creating salt.php file...'",
-      "echo '<?php' > salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> salt.php"
+      "echo '<?php' > public_html/salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> public_html/salt.php"
     ]
   }
 }
