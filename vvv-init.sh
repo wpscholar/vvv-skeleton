@@ -7,7 +7,6 @@ npm install replace -g
 composer install
 composer run generate-salts
 
-wp db drop --yes --path=public_html/wp
 wp db create --path=public_html/wp
 
 # Import database from /sql/import.sql
