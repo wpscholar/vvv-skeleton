@@ -19,8 +19,8 @@
     }
   ],
   "require": {
-    "johnpbloch/wordpress": "*@stable",
-    "composer/installers": "*@stable"
+    "johnpbloch/wordpress": "@stable",
+    "composer/installers": "@stable"
   },
   "extra": {
     "wordpress-install-dir": "public_html/wp",
